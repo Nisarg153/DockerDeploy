@@ -23,5 +23,10 @@ pipeline {
                 }
             }
         }
+        stage('Configuring Docker pull pipeline'){
+            steps{
+                build 'DockerPullPipeline'
+            }
+        }
     }
 }
